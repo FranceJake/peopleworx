@@ -128,7 +128,7 @@ $(function () {
         pointStrokeColor: 'rgba(60,141,188,1)',
         pointHighlightFill: '#fff',
         pointHighlightStroke: 'rgba(60,141,188,1)',
-        data: [100,92,95,100,90,95,98,97,100]
+        data: [100,92,95,100,90,95,98,97,93]
       },
       {
         label: 'Absences',
@@ -139,7 +139,7 @@ $(function () {
         pointStrokeColor: '#c1c7d1',
         pointHighlightFill: '#fff',
         pointHighlightStroke: 'rgba(220,220,220,1)',
-        data: [0,8,5,0,10,5,2,3,0]
+        data: [0,8,5,0,10,5,2,3,2]
       }
     ]
   }
@@ -182,7 +182,7 @@ $(function () {
     ],
     datasets: [
       {
-        data: [13, 249, 25],
+        data: [2, 93, 2],
         backgroundColor: ['#f56954', '#00a65a', '#f39c12']
       }
     ]
