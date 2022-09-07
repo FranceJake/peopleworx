@@ -120,7 +120,7 @@ $(function () {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     datasets: [
       {
-        label: 'Digital Goods',
+        label: 'Present',
         backgroundColor: 'rgba(60,141,188,0.9)',
         borderColor: 'rgba(60,141,188,0.8)',
         pointRadius: false,
@@ -128,10 +128,10 @@ $(function () {
         pointStrokeColor: 'rgba(60,141,188,1)',
         pointHighlightFill: '#fff',
         pointHighlightStroke: 'rgba(60,141,188,1)',
-        data: [28, 48, 40, 19, 86, 27, 90]
+        data: [100,92,95,100,90,95,98,97,100]
       },
       {
-        label: 'Electronics',
+        label: 'Absences',
         backgroundColor: 'rgba(210, 214, 222, 1)',
         borderColor: 'rgba(210, 214, 222, 1)',
         pointRadius: false,
@@ -139,7 +139,7 @@ $(function () {
         pointStrokeColor: '#c1c7d1',
         pointHighlightFill: '#fff',
         pointHighlightStroke: 'rgba(220,220,220,1)',
-        data: [65, 59, 80, 81, 56, 55, 40]
+        data: [0,8,5,0,10,5,2,3,0]
       }
     ]
   }
@@ -148,17 +148,17 @@ $(function () {
     maintainAspectRatio: false,
     responsive: true,
     legend: {
-      display: false
+      display: true
     },
     scales: {
       xAxes: [{
         gridLines: {
-          display: false
+          display: true
         }
       }],
       yAxes: [{
         gridLines: {
-          display: false
+          display: true
         }
       }]
     }
@@ -167,7 +167,7 @@ $(function () {
   // This will get the first returned node in the jQuery collection.
   // eslint-disable-next-line no-unused-vars
   var salesChart = new Chart(salesChartCanvas, { // lgtm[js/unused-local-variable]
-    type: 'line',
+    type: 'bar',
     data: salesChartData,
     options: salesChartOptions
   })
