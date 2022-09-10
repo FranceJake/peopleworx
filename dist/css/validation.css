@@ -1,0 +1,13 @@
+.inputControl.success input {
+    border-color: #09c372;
+}
+
+.inputControl.error input {
+    border-color: #ff3860;
+}
+
+.inputControl .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
