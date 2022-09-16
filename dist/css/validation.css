@@ -1,9 +1,9 @@
 .inputControl.success input {
-    border-color: #09c372;
+    border: solid 1px #09c372;
 }
 
 .inputControl.error input {
-    border-color: #ff3860;
+    border: solid 1px #ff3860;
 }
 
 .inputControl .error {
