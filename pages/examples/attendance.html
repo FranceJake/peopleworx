@@ -308,23 +308,15 @@
                 <!-- Default box -->
                 <div class="card">
                     <div class="card-header">
-                        <a class="btn btn-info btn-sm" href="#">
+                        <a class="btn btn-info btn-sm" href="./form-attendance.html">
                             <i class="fas fa-plus">
                             </i>
                             New
                         </a>
 
-                        <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
                     </div>
                     <div class="card-body p-0">
-                        <table class="table">
+                        <table class="table" id="table-el">
                             <thead>
                                 <tr>
                                     <th style="width: 15%">
@@ -352,21 +344,11 @@
                             <tbody>
                                 <tr>
 
-                                    <td>
-                                        ABC123
-                                    </td>
-                                    <td>
-                                        Ano Nymous1
-                                    </td>
-                                    <td>
-                                        09/01/2022
-                                    </td>
-                                    <td>
-                                        8:00 AM
-                                    </td>
-                                    <td>
-                                        5:00 PM
-                                    </td>
+                                    <td id="log-eid">A0001</td>
+                                    <td id="log-name">Ano Nymous</td>
+                                    <td id="log-date">10/01/2022</td>
+                                    <td id="log-timeIn">8:00AM</td>
+                                    <td id="log-timeOut">5:00PM</td>
                                     <td class="project-actions">
                                         <a class=" btn btn-info btn-sm" href="#">
                                             <i class="fas fa-pencil-alt">
@@ -380,69 +362,6 @@
                                         </a>
                                     </td>
                                 </tr>
-
-                                <tr>
-
-                                    <td>
-                                        ABC456
-                                    </td>
-                                    <td>
-                                        Ano Nymous2
-                                    </td>
-                                    <td>
-                                        09/01/2022
-                                    </td>
-                                    <td>
-                                        8:00 AM
-                                    </td>
-                                    <td>
-                                        5:00 PM
-                                    </td>
-                                    <td class="project-actions">
-                                        <a class=" btn btn-info btn-sm" href="#">
-                                            <i class="fas fa-pencil-alt">
-                                            </i>
-                                            Edit
-                                        </a>
-                                        <a class="btn btn-danger btn-sm" href="#">
-                                            <i class="fas fa-trash">
-                                            </i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-
-                                    <td>
-                                        ABC789
-                                    </td>
-                                    <td>
-                                        Ano Nymous3
-                                    </td>
-                                    <td>
-                                        09/01/2022
-                                    </td>
-                                    <td>
-                                        8:00 AM
-                                    </td>
-                                    <td>
-                                        5:00 PM
-                                    </td>
-                                    <td class="project-actions">
-                                        <a class=" btn btn-info btn-sm" href="#">
-                                            <i class="fas fa-pencil-alt">
-                                            </i>
-                                            Edit
-                                        </a>
-                                        <a class="btn btn-danger btn-sm" href="#">
-                                            <i class="fas fa-trash">
-                                            </i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-
                             </tbody>
                         </table>
                     </div>
@@ -475,6 +394,8 @@
         <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- AdminLTE App -->
         <script src="../../dist/js/adminlte.js"></script>
+        <!--Add New data-->
+        <script src="../../dist/js/pages/newData.js"></script>
     </div>
 </body>
 

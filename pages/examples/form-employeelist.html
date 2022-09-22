@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peoplewokx | Cash Advance</title>
+    <title>Peoplewokx | Employee List</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -13,6 +13,20 @@
     <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+    <style>
+        input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -193,11 +207,9 @@
                         <li class="nav-item">
                             <a href="../../dashboard.html" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Dashboard
-
-                                </p>
+                                <p>Dashboard</p>
                             </a>
+                        </li>
 
                         <li class="nav-header">Manage</li>
                         <li class="nav-item">
@@ -219,7 +231,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../examples/employeelist.html" class="nav-link">
+                                    <a href="../examples/employeelist.html" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Employee List</p>
                                     </a>
@@ -231,7 +243,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../examples/cashadvance.html" class="nav-link active">
+                                    <a href="../examples/cashadvance.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Cash Advance</p>
                                     </a>
@@ -245,7 +257,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="../examples/deductions.html" class="nav-link">
+                            <a href="./deductions.html" class="nav-link">
                                 <i class="nav-icon fas fa-columns"></i>
 
                                 <p>
@@ -294,12 +306,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Cash Advance</h1>
+                            <h1>Add new data</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Cash Advance</li>
+                                <li class="breadcrumb-item active">Employee List</li>
                             </ol>
                         </div>
                     </div>
@@ -311,144 +323,74 @@
 
                 <!-- Default box -->
                 <div class="card">
-                    <div class="card-header">
-                        <a class="btn btn-info btn-sm" href="./form-cashadvance.html">
-                            <i class="fas fa-plus">
-                            </i>
-                            New
-                        </a>
 
-                        <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
                     <div class="card-body p-0">
-                        <table class="table table-striped projects">
+                        <table class="table projects">
                             <thead>
                                 <tr>
-                                    <th style="width: 1%">
-                                        #
-                                    </th>
                                     <th style="width: 20%">
-                                        Date
-                                    </th>
-                                    <th style="width: 30%">
                                         Employee ID
                                     </th>
-                                    <th>
+                                    <th style="width: 5%">
+                                        Photo
+                                    </th>
+                                    <th style="width: 10%">
                                         Name
                                     </th>
-                                    <th style="width: 8%" class="text-center">
-                                        Amount
+                                    <th style="width: 10%" class="text-center">
+                                        Position
                                     </th>
-                                    <th style="width: 20%">
+                                    <th style="width: 10%">
+                                        Schedule
+                                    </th>
+                                    <th style="width: 10%" class="text-center">
+                                        Hire Date
+                                    </th>
+
+                                    <th>
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        #
-                                    </td>
-                                    <td>
 
-                                        01.01.2019
+                                        <input type="text" name="eid" id="eId-el">
 
                                     </td>
                                     <td>
-                                        <!-- <ul class="list-inline">
-                              <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar.png">
-                              </li>
-                              <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar2.png">
-                              </li>
-                              <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar3.png">
-                              </li>
-                              <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar4.png">
-                              </li>
-                          </ul> -->
-                                        ABC123456789
+                                        <ul class="list-inline">
+                                            <input type="file" name="upload" id="upload-el">
+                                        </ul>
+
                                     </td>
                                     <td class="project_progress">
 
-
-                                        Jose Manalo
+                                        <input type="text" name="name" id="name-el">
 
                                     </td>
                                     <td class="project-state">
-                                        1,000
+                                        <input type="text" name="position" id="pos-el">
+                                    </td>
+                                    </td>
+                                    <td class="project_progress">
+                                        <input type="text" name="sched" id="sched-el">
+                                    </td>
+                                    <td class="project-state">
+                                        <input type="text" name="hireDate" id="hired-el">
                                     </td>
                                     <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="#">
-                                            <i class="fas fa-folder">
-                                            </i>
-                                            View
-                                        </a>
-                                        <a class="btn btn-info btn-sm" href="#">
+                                        <a class="btn btn-info btn-sm" href="./employeelist.html">
                                             <i class="fas fa-pencil-alt">
                                             </i>
-                                            Edit
+                                            Save
                                         </a>
-                                        <a class="btn btn-danger btn-sm" href="#">
+                                        <a class="btn btn-danger btn-sm" id="del-el">
                                             <i class="fas fa-trash">
                                             </i>
                                             Delete
                                         </a>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        #
-                                    </td>
-                                    <td>
-
-                                        01.01.2019
-
-                                    </td>
-                                    <td>
-                                        <!-- <ul class="list-inline">
-                              <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar.png">
-                              </li>
-                              <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../dist/img/avatar2.png">
-                              </li>
-                          </ul> -->
-                                        AAS123456789
-                                    </td>
-                                    <td class="project_progress">
-                                        Al Guzman
-                                    </td>
-                                    <td class="project-state">
-                                        5,000
-                                    </td>
-                                    <td class="project-actions text-right">
-                                        <a class="btn btn-primary btn-sm" href="#">
-                                            <i class="fas fa-folder">
-                                            </i>
-                                            View
-                                        </a>
-                                        <a class="btn btn-info btn-sm" href="#">
-                                            <i class="fas fa-pencil-alt">
-                                            </i>
-                                            Edit
-                                        </a>
-                                        <a class="btn btn-danger btn-sm" href="#">
-                                            <i class="fas fa-trash">
-                                            </i>
-                                            Delete
-                                        </a>
-                                    </td>
-                                </tr>
-
                                 </tr>
                             </tbody>
                         </table>
@@ -483,6 +425,8 @@
     <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../../dist/js/adminlte.min.js"></script>
+    <!--Add New data-->
+    <script src="../../dist/js/pages/newData.js"></script>
 
 </body>
 
